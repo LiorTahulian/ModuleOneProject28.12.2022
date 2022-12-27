@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of module one - Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+
+        <div id="divClock" class="clock"></div>
+
+        <b><u>Events 4 You</u></b>
+
+        <div class="favoriteUserColorFont">
+            Choose a background color page:
+            <input type="color" id="favcolor" value="#f9fcfd" />
+            Choose a font page:
+            <input list="TextChosen" id="userTextChosen" placeholder="Choose a font text">
+                    <datalist id="TextChosen">
+                        <option value="Verdana">
+                        <option value="Courier New">
+                        <option value="Arial">
+                        <option value="Comic Sans MS">
+                        <option value="Impact">
+                    </datalist>
+            <button id="userFavoriteButton">Choose</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="inputBox">
+            <form>
+                <label for="eventName">Event's name:</label>
+                <input type="text" id="eventName" name="eventName" class="inputInformation">
+
+                <label for="guests">Number of guests:</label>
+                <input type="number" id="numberOfGuests" name="guests" class="inputInformation">
+
+                <label for="date">The date of the event:</label>
+                <input type="date" id="dateEvent" name="date" class="inputInformation">
+
+                <p><u>The design of the event:</u></p>
+                <p>
+                    <input type="radio" id="without" name="design" checked>
+                    <label for="option1">Without</label>
+                </p>
+                
+                <p>
+                    <input type="radio" id="basic" name="design">
+                    <label for="option2">Basic</label>
+                </p>
+                
+                <p style="margin-bottom:10px;">
+                    <input type="radio" id="luxurious" name="design">
+                    <label for="option3">Luxurious</label>
+                </p>
+
+                <label for="pwd">Credit Card:</label>
+                <input type="password" id="creditCard" name="pwd" class="inputInformation">
+
+                <label for="pwd2">CVV:</label>
+                <input type="password" id="CVV" name="pwd2" class="inputInformation">
+
+                <input type="submit" id="addBtn" value="Add Event"/>
+                <input id="Reset" type="reset" value="Reset" />               
+            </form>
+        </div>
+
+
+        <div class="descriptionBox">
+            <h3 style="margin-bottom: 20px;">Hello and welcome to our best Event Menegment Program.</h3>
+            <p>Here you can add information and add your events easily to your calendar.</p>
+            <p>You can add data easily and quickly and not waste time on an annoying and inconvenient interface.</p>
+            <p>So what are you waiting for ?</p>
+            <p>Start managing your events here and now !</p>
+            <p>If you want to clear all the data, please press the yellow button below and then refresh the page.</p>
+            <button id="clearLocalStorage">Clear All LocalStorage</button>
+        </div>
+
+
+        <div id="changeBox">
+            
+        </div>
+
+    </div>
+       
+
+    <h3 style="margin-bottom: 15px;"><center><u>Here you can see all your Events:</u></center></h3>
+
+
+    <div id='allTheEvents' class="allTheEvents">
+
+    </div>
+
+    
+    <div class="footer">All rights reserved to Lior Tahulian</div>
+
+</body>
+</html>

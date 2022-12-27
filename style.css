@@ -1,0 +1,283 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0px;
+}
+
+
+.favoriteUserColorFont {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+#favcolor {
+    padding: 0px;
+    border-radius: 0px;
+    height: 20px;
+}
+
+
+#userTextChosen {
+    padding: 0px;
+    border-radius: 0px;
+    width: 130px;
+}
+
+
+#userFavoriteButton {
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}   
+#userFavoriteButton:hover {
+    background-color:#5cbf2a;
+}
+#userFavoriteButton:active {
+    position: relative;
+    top: 3px;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+
+.inputBox {
+    border: solid 5px rgb(51, 255, 0);
+    border-radius: 7px;
+    padding: 15px;
+    width: 20%;
+    margin: 10px;
+    background-image: linear-gradient(rgb(255, 57, 57), yellow);
+}
+.inputBox .inputInformation{
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+
+input {
+    border-radius: 7px;
+    padding: 8px;
+}
+
+
+.inputInformation {
+    width: 90%;
+}
+
+
+.descriptionBox {
+    padding: 15px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+.descriptionBox p {
+    margin-bottom: 30px;
+}
+
+
+.allTheEvents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+
+.newDivDecoration {
+    border: solid 5px rgb(0, 255, 179);
+    text-align: center;
+    border-radius: 7px;
+    padding: 15px;
+    width: 18%;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 7px red;
+}
+.newDivDecoration p {
+    margin-bottom: 15px;
+}
+
+
+.newBtnDecoration {
+    background-color: red;
+    color: white;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+.newChangeBox {
+    border: solid 5px rgb(55, 0, 255);
+    border-radius: 7px;
+    padding: 15px;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 255, 255), rgb(225, 0, 255));
+}
+.newChangeBox input,.newChangeBox select {
+    margin-bottom:10px;
+}
+.newChangeBox input {
+    width: 95%;
+}
+
+
+#changeBox{
+    width:20%;
+    margin:10px;
+}
+
+
+#Reset {
+    background-color: rgb(255, 118, 118);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 8px 21px;
+}
+
+
+#addBtn {
+    background-color: rgb(143, 248, 143);
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 8px;
+}
+
+
+#clearLocalStorage {
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 7px 7px;
+    cursor: pointer;
+}
+
+
+.approveBtn {
+    background-color: rgb(143, 248, 143);
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px;
+}
+
+
+.cancelBtn {
+    background-color: rgb(255, 118, 118);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+
+
+/* ========= Clock ========= */
+
+.clock {
+  animation: myAnim 3s ease 0s 1 normal forwards;
+  width: 100px;
+  height: 55px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(117, 190, 250));
+  font-size: 20px;
+  text-align: center;
+  border: #ff0000 5px solid;
+  border-radius: 7px;
+  position: fixed;
+  top: 0px;
+  left: 20px;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
